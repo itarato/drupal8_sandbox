@@ -1,0 +1,15 @@
+drupal8_sandbox.page:
+  path: '/drupal8_sandbox/page'
+  defaults:
+    _controller: '\Drupal\drupal8_sandbox\Controller\PageController::getPage'
+    _title: 'drupal8_sandbox test page'
+  requirements:
+    _permission: 'access content'
+
+drupal8_sandbox.form:
+  path: '/drupal8_sandbox/form'
+  defaults:
+    _form: '\Drupal\drupal8_sandbox\Form\CustomForm'
+    _title: 'drupal8_sandbox test form'
+  requirements:
+    _permission: 'access content'
